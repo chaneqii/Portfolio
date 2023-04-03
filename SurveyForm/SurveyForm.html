@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="title" content="survey-form">
+    <meta name="description" content="Gym Fanatics Survey Form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <title>
+        GymFanaticsSurveyForm
+    </title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Gym Fanatics Survey Form</h1>
+        <p id="description">Help us to improve people's daily lives</p>
+    </header>
+    <div class="form">
+        <form id="survey-form" action="/submit">
+            <label class="question" id="name-label" for="name">Name</label>
+            <input required id="name" value="name" type="text" placeholder="Enter your name" />
+
+            <label class="question" id="email-label" for="email">Email</label>
+            <input required id="email" value="email" type='email' placeholder="Enter your email" />
+
+            <label class="question" id="number-label" for="number">Age</label>
+            <input required id="number" value="number" type="number" placeholder="Age" min="13" max="120" />
+
+            <label class="question" for="dropdown">Describe your current workout envioroment</label>
+            <select id="dropdown">
+                <option>Select your envioroment</option>
+                <option>Home</option>
+                <option>Gym</option>
+                <option>Indoor arena</option>
+                <option>Outdoor park</option>
+            </select>
+
+
+            <label class="question">
+                How many times per week do you work out?
+            </label>
+
+            <label><input class="inline" type="radio" value="one day" Name="days">One day</label>
+            <label><input class="inline" type="radio" value="Two days" Name="days"> Two days</label>
+            <label><input class="inline" type="radio" value="Six to seven days" Name="days"> Six to seven </label>
+            <label><input class="inline" type="radio" value="Five days" Name="days"> Five days</label>
+
+            <label class="question">
+                What is your facvourite type of workout?
+            </label>
+            <select id="dropdown1">
+                <option>Jogging</option>
+                <option>Cardio</option>
+                <option>Strenght training</option>
+                <option>Weight training</option>
+                <option>Yoga/Relaxation</option>
+            </select>
+
+
+            <label class="question">
+                What equipment do you prefer to use?
+            </label>
+
+            <label><input type="checkbox" value="Weights" class="inline" />Weights(Dumbells)</label>
+            <label><input type="checkbox" value="bicycle" class="inline" />Bicycle</label>
+            <label><input type="checkbox" value="bench" class="inline" />Bench</label>
+            <label><input type="checkbox" value="Boody band" class="inline" />Boody band</label>
+            <label><input type="checkbox" value="Yoga matt" class="inline" />Yoga matt</label>
+
+            <label class="question">How can we help people to get more active?</label>
+            <textarea class="inline" placeholder="Enter your text here"></textarea>
+
+
+            <input type="submit" value="submit" id="submit" />
+    </div>
+    </form>
+</body>
+
+</html>

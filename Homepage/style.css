@@ -1,0 +1,179 @@
+body{
+    background-color: #1d3d0f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1rem 0 0 0%;
+    color: white;
+}
+
+h1{
+    font-size: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 2rem;
+    color: #fff;
+     text-shadow:
+      0 0 7px #ff7359,
+      0 0 10px #ff7359,
+      0 0 21px #ff7359,
+      0 0 42px #ff7359,
+      0 0 82px #ff7359,
+      0 0 92px #ff7359,
+      0 0 102px #ff7359,
+      0 0 151px #ff7359;
+}
+
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+
+header > img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+nav a:hover{
+    color:#aaa58e;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+    padding:0;
+    background-color:#ff7359;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav li{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.promotion{
+    background-image: url("Bg1.jpg");
+    background-size: cover;
+    background-position: 0%;
+    height: 20rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: center;
+    padding: 2rem;
+    height: 12rem;
+    color: #ff7359;
+    border-radius: 3rem;
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+
+.promotion  .infoText{
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    -webkit-animation: blink 1s infinite;
+}
+article div{
+    background-color: #1d3d0fa2;
+    border-radius: 1rem;
+}
+
+section{
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+div{
+    flex: 1;
+}
+
+article img{
+    width: 12rem;
+    border-radius: 100%;
+}
+
+section .infoBlock{
+    margin: 1rem;
+    text-align: center;
+    color:#aaa58e;
+    margin-bottom: 2rem;
+    
+}
+
+button{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background-color:#ff7359;
+    color: white;
+    border: none;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+button:hover{
+    background-color: #ffa37e;
+    width: 6rem;
+    height: 3rem;
+   
+}
+
+footer{
+    display:flex;
+    background-color:#ff7359;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+footer div{
+    flex:1
+}
+
+footer .logo{
+    margin-left: 3rem;
+}
+
+.copyRight{
+    text-align: end;
+    margin-right: 3rem;
+}
+
+@media (max-width: 600px){
+    nav li{
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .promotion  .infoText{
+        font-size: 1rem;
+        color: white;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        -webkit-animation: blink 1s infinite;
+    }
+    
+    section{
+        flex-wrap: wrap;
+    }
+}
+

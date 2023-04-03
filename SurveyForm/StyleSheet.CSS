@@ -1,0 +1,58 @@
+
+body{
+    background-image: url('Gym1.jfif');
+    background-size:cover;
+    font-family: Tahoma;
+  font-size: 16px;
+}
+
+
+h1{
+    color: white;
+    font-size: 40px;
+}
+#description{
+    color: rgba(153, 0, 0, 1);
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+}
+
+form{
+    margin: 10% 20% 0% 20%;
+    padding: 50px;
+    background: rgba(153, 0, 0, 0.7);
+}
+    
+
+h1{
+    margin: 1em auto;
+    text-align: center;
+}
+
+label, input, select, textarea{
+    font-size: medium;
+    width: 100%;
+    margin: 10px 0 0 0; 
+}
+label{
+    display: block;
+}
+
+input, textarea, select{
+    border: 1px solid;
+    min-height: 2em;
+}
+
+.question{
+    font-weight: bold;
+}
+
+
+.inline{
+    
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    
+}
